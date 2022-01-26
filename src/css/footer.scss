@@ -1,0 +1,37 @@
+.footer{
+  padding: 70px 0 98px;
+  &__navbar{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__row{
+    display: flex;
+    column-gap: 115px;
+  }
+  &__title{
+    @include text(500, 16px, 24px, $white);
+    margin: 25px 0 21px;
+  }
+  &__subtitle{
+    @include text(normal, 14px, 25px, $grey);
+  }
+  &__list{
+    @include text(500, 20px, 30px, $white);
+    &-menu{
+      margin-bottom: 20px;
+    }
+    &-link{
+      @include text(500, 16px, 24px, $grey);
+      &:hover{
+        color: #FF6E30;
+      }
+    }
+    &__img{
+      width: 100%;
+    }
+  }
+}
+.line{
+  border-top: 0.5px solid rgba(255, 255, 255, 0.15);
+  padding-bottom: 70px;
+}

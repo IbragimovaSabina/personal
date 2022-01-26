@@ -1,0 +1,91 @@
+.popular{
+  padding: 200px 0 100px;
+  &__title{
+    @include text(500, 48px, 130%, $white);
+    text-align: center;
+  }
+  &__subtitle{
+    @include text(500, 18px, 30px, $grey);
+    text-align: center;
+    margin-top: 25px;
+    padding-bottom: 90px;
+  }
+  &__row{
+   display: flex;
+    flex-wrap: wrap;
+  }
+  &__card{
+    width: calc(33.3333% - 17px);
+    border-radius: 15px;
+    padding: 34px 40px 41px;
+    transition: .6s;
+    cursor: pointer;
+    margin-bottom: 120px;
+    &:hover {
+      background: rgba(40, 48, 54, 0.6);
+      backdrop-filter: blur(50px);
+      transform: translateY(-30px);
+      &-img{
+        width: 100%;
+      }
+    }
+    &-content{
+      display: flex;
+      column-gap: 41px;
+    }
+    &-name{
+      @include text(500, 24px, 36px, $white);
+    }
+    &-text{
+      @include text(normal, 18px, 27px, $brown);
+    }
+    &-descr{
+      @include text(normal, 16px, 30px, $grey);
+      margin: 30px 0 30px;
+    }
+  }
+  &__content{
+    display: flex;
+    align-items: center;
+    column-gap: 132px;
+
+  }
+  &__icons{
+     display: flex;
+     column-gap: 28px;
+
+   }
+  &__icon:hover svg path{
+    fill: #FD3B41;
+
+  }
+  &__btn{
+    @include text(600, 16px, 24px, $grey);
+    border: none;
+    padding:  9px 35px;
+    background-color: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    &:hover{
+      background: #FF6E30;
+    }
+  }
+}
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn{
+  @include text(500, 20px, 30px, $orange);
+  background: #1E252B;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  width: 184px;
+  height: 64px;
+  cursor: pointer;
+  &:hover{
+    background: #FF6E30;
+    color: white;
+  }
+}

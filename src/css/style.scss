@@ -1,0 +1,38 @@
+@import "../libs/owlcarousel/owl.carousel.min.css";
+@import "../libs/owlcarousel/owl.theme.default.min.css";
+@import "../fonts/poppins/stylesheet.css";
+@import "enhancers";
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+.burger{
+  display: none;
+}
+.container{
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+body {
+  background: #1E252B;
+}
+
+@import "header";
+@import "awesome";
+@import "popular";
+@import "more";
+@import "tools";
+@import "manager";
+@import "become";
+@import "footer";
+@import "media";
+

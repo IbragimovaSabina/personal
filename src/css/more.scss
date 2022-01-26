@@ -1,0 +1,21 @@
+.more{
+  margin: 100px 0 100px;
+  &__content{
+    background: rgba(40, 48, 54, 0.6);
+    border-radius: 25px;
+  }
+  &__title{
+    @include text(500, 24px, 36px, $white);
+    text-align: center;
+    padding: 55px 0 56px;
+  }
+  &__row{
+    display: flex;
+    justify-content: center;
+    column-gap: 107px;
+    padding-bottom: 60px;
+  }
+  &__img{
+    width: 100%;
+  }
+}
